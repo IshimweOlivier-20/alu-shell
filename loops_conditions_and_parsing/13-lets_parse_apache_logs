@@ -3,7 +3,7 @@
 
 if [ ! -f apache-access.log ] ; then
   echo "Log file not found"
-  exit l
+  exit 1
 fi
 
 # Parse the log file and display IP and HTTP status code 
