@@ -1,8 +1,10 @@
-
 #!/usr/bin/env bash
-# This script demonstrates handling different signals and creates a PID file
+#create the file /var/run/myscript.pid containing its PID
+#Displays To infinity and beyond indefinitely
+#Displays I hate the kill command when receiving a SIGTERM signal
+#Displays Y u no love me?! when receiving a SIGINT signal
+#Deletes the file /var/run/myscript.pid and terminates itself when receiving a SIGINT or SIGTERM signal.
 
-# Create the PID file
 echo $$ > /var/run/myscript.pid
 
 # Define signal handlers
