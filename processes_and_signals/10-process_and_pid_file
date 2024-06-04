@@ -19,4 +19,3 @@ do
   trap 'echo "Y u no love me?!"; terminator' SIGINT
   trap 'echo "I hate the kill command"; terminator' SIGTERM
 done
-
