@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+
 #create the file /var/run/myscript.pid containing its PID
 #Displays To infinity and beyond indefinitely
 #Displays I hate the kill command when receiving a SIGTERM signal
@@ -15,5 +16,6 @@ trap 'rm -f /var/run/myscript.pid; exit' SIGQUIT
 # Infinite loop
 while true; do
     echo "To infinity and beyond"
-     sleep 2
+    sleep 2
 done
+
